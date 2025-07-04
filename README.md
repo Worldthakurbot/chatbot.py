@@ -1,1 +1,67 @@
-# chatbot.py
+# Simple Rule-Based Chatbot using if-else
+
+# 🧠 Task 8: Build a Chatbot using if-else
+# 🎯 Objective:
+1. Create a rule-based chatbot that interacts with the user using predefined responses.
+
+# 🛠️ Tools:
+- Python 3.13.5
+- VS Code / Any text editor
+- Command Line / Terminal
+
+# 🧠 Features to Include
+1. HELLO/HI
+2. HOW ARE YOU
+3. YOUR NAME
+4. HELP
+5. WEATHER
+6. THANKS
+
+# 📄 Deliverable:
+i. A Python script that simulates a simple chatbot using input/output loops and conditional logic.
+
+## 🚀 How It Works
+
+The chatbot:
+- Uses a `while` loop to keep chatting with the user.
+- Takes input from the user using `input()`.
+- Responds using `if-elif-else` logic based on keywords or phrases.
+- Ends the chat when the user types `"bye"`, `"exit"`, or `"quit"`.
+
+## 🧠 Key Concepts Covered
+
+- **Input Handling:** Taking user input with `input()` and processing it with `.lower()`.
+- **Control Flow:** Using `if`, `elif`, and `else` statements to make decisions.
+- **Loops:** Using a `while` loop to keep the conversation going until the user exits.
+- **Basic NLP Logic:** Simulating natural language understanding using keyword matching.
+- **Function Definition:** Encapsulating chatbot logic in a function (`def chatbot():`).
+
+---
+
+
+
+# chatbot.py 
+
+print("Hello! I'm ROHAN'S_BOT. Type 'bye' to end the chat.")
+
+while True:
+    user_input = input("You: ").lower()  # Convert input to lowercase for easier matching
+
+    if user_input == 'bye':
+        print("ROHAN'S_BOT: Goodbye! Have a great day!")
+        break
+    elif 'hello' in user_input or 'hi' in user_input:
+        print("ROHAN'S_BOT: Hello there! How can I help you?")
+    elif 'how are you' in user_input:
+        print("ROHAN'S_BOT: I'm just a bunch of code, but I'm doing great! How about you?")
+    elif 'your name' in user_input:
+        print("ROHAN'S_BOT: I'm ROHAN'S_BOT, your friendly chatbot.")
+    elif 'help' in user_input:
+        print("ROHAN'S_BOT: Sure! You can ask me about the weather, my name, or how I’m doing.")
+    elif 'weather' in user_input:
+        print("ROHAN'S_BOT: I can't check the weather yet, but it's always sunny in the world of code!")
+    elif 'thanks' in user_input or 'thank you' in user_input:
+        print("ROHAN'S_BOT: You're welcome!")
+    else:
+        print("ROHAN'S_BOT: I'm not sure. Try asking something else!")
+
